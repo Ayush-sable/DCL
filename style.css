@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+:root{
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-bg-color: #fff;
+  --main-color:#0ef;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+body{
+    background: var(--bg-color);
+    color:var(--text-color);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    padding:2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+}
+
+
+.logo{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar{
+    margin-right: 5rem;
+}
+.navbar a{
+     
+    font-size: 1.7rem;
+    color: white;
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: aqua;
+}
+
+
+#menu-icon{
+ font-size: 3.6rem;
+ color:white;
+ display: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    .home-img{
+        
+        img{
+            height: 450px;
+            margin-left: 10rem;
+            border-radius: 20%;
+            
+
+        }
+      
+    }
+}
+
+.home-img{
+    margin-bottom: 60px;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .home-content{
+        color: azure;
+    }
+}
+
+
+.home-content h3{
+      
+      font-size: 3.2rem;
+      font-weight:700 ;
+    }
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+span{
+    color: #0ef;
+}
+
+.home-content h1{
+   
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+
+.social-media a{
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 4rem;
+     height: 4rem;
+     background: transparent;
+     border: .2rem solid rgb(16, 197, 237);
+     border-radius: 50%;
+     font-size: 2rem;
+     color: white;
+     margin: 3rem 1.5rem 3rem 0;
+     transition:  .5s ease;
+}
+.social-media a:hover{
+    background: red;
+    color: gold;
+    box-shadow: 0 0 1rem blueviolet;
+}
+
+
+
+.btn{
+    margin-left: 2rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background:  4rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem  #0ef;
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    color: red;
+    box-shadow: none;
+    background: #0ef;
+}
